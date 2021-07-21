@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans:wght@400;700;800&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>GameFinder</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="login">
+            <h1 class="login__heading">
+                Game<span class="login__heading--bold">Finder</span>
+            </h1>
+            <form class="login__form">
+                <div class="input-container">
+                    <div class="input-box">
+                        <div class="input-box__icon-box">
+                            <!-- SVG de usuario-->
+                        </div>
+                        <input type="text" class="input-box__text-box" placeholder="Email">
+                    </div>
+                    <p class="input__error-message">Enter a valid email</p>
+                </div>
+                <div class="input-container">
+                    <div class="input-box">
+                        <div class="input-box__icon-box">
+                            <!-- SVG de llave-->
+                        </div>
+                        <input type="text" class="input-box__text-box input-box__text-box--password"
+                            placeholder="Password">
+                        <!-- SVG del ojo -->
+                    </div>
+                    <p class="input__error-message">Enter a valid password</p>
+                </div>
+                <div class="login-options">
+                    <input id="remember" type="checkbox" class="login-options__remember-checkbox">
+                    <label for="remember" class="login-options__remember-label">Remember me</label>
+                    <button class="login-options__login-button">LOGIN</button>
+                </div>
+            </form>
+            <div class="account-options">
+                <a href="#" class="account-options__link">Register now</a>
+                <a href="#" class="account-options__link">Forgot password?</a>
+            </div>
+            <div class="separator">
+                <hr class="separator__line">
+                <p class="separator__text">or</p>
+                <hr class="separator__line">
+            </div>
+            <div class="social-logins">
+                <div class="social-logins__box social-logins__box--facebook" tabindex=0>
+                    <div class="social-logins__icon-box social-logins__icon-box--facebook">
+                        <!-- SVG de FB -->
+                    </div>
+                    <div class="social-logins__text-box social-logins__text-box--facebook"><p class="social-logins__text">Login with Facebook</p></div>
+                </div>
+                <div class="social-logins__box social-logins__box--twitter" tabindex=0>
+                    <div class="social-logins__icon-box social-logins__icon-box--twitter">
+                        <!-- SVG de twitter -->
+                    </div>
+                    <div class="social-logins__text-box social-logins__text-box--twitter"><p class="social-logins__text">Login with Twitter</p></div>
+                </div>
+                <div class="social-logins__box social-logins__box--google" tabindex=0>
+                    <div class="social-logins__icon-box social-logins__icon-box--google">
+                        <!-- SVG de google -->
+                    </div>
+                    <div class="social-logins__text-box social-logins__text-box--google"><p class="social-logins__text">Login with Google</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="carousel"></section>
+    </div>
+</body>
+
+</html>
