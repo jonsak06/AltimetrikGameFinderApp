@@ -162,7 +162,7 @@ body {
 .login-options__remember-checkbox:checked {
     background: #7CD235;
     border: none;
-    background-image: url("images/check.svg");
+    background-image: url("assets/images/check.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
