@@ -548,20 +548,31 @@ body {
 .option {
     font-size: 2.2rem;
     margin-bottom: 1.1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-/* .option__icon {
-} */
+.option:hover > .option__icon {
+    fill: var(--color-primary);
+}
+
+.option:hover > .option__text {
+    color: var(--color-primary);
+}
+
+.option:active > .option__text {
+    font-weight: 700;
+}
+
+.option__icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: var(--color-white);
+    margin-right: 1.4rem;
+}
 
 .option__text {
     text-decoration: none;
     color: inherit;
-}
-
-.option__text:hover {
-    color: var(--color-primary);
-}
-
-.option__text:active {
-    font-weight: 700;
 }
