@@ -445,6 +445,9 @@ body {
 /*Homepage styles*/
 .homepage-body {
     background: var(--color-bg-2);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .header {
@@ -557,14 +560,14 @@ body {
     justify-self: flex-end;
 }
 
+.main-container {
+    display: flex;
+}
+
 /*Sidebar*/
 .sidebar {
     width: 26rem;
-    height: auto;
-    position: absolute;
-    left: 0;
-    top: 12rem;
-    margin-left: 2rem;
+    margin-left: 3.8rem;
 }
 
 .sidebar__items {
