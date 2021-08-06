@@ -561,7 +561,7 @@ body {
     justify-self: flex-end;
 }
 
-.main-container {
+.home-container {
     display: flex;
     width: 100vw;
 }
@@ -639,6 +639,12 @@ body {
 .option__text {
     text-decoration: none;
     color: inherit;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
 }
 
 .home-heading-section {
