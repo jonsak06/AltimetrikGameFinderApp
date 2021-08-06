@@ -18,6 +18,7 @@
     --color-gray-4: #a6a6a6;
     --color-gray-5: #d8d8d8;
     --color-gray-6: #f1f1f1;
+    --color-gray-7: #515151;
 
     --color-red-1: #ed7474;
     --color-red-2: #e07979;
@@ -562,12 +563,14 @@ body {
 
 .main-container {
     display: flex;
+    width: 100vw;
 }
 
 /*Sidebar*/
 .sidebar {
     width: 26rem;
     margin-left: 3.8rem;
+    margin-right: 1.2rem;
 }
 
 .sidebar__items {
@@ -636,4 +639,54 @@ body {
 .option__text {
     text-decoration: none;
     color: inherit;
+}
+
+.home-heading-section {
+    width: 100%;
+    height: 8.6rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+.home-heading-container {
+    margin-right: auto;
+}
+
+.home-heading {
+    font-weight: 800;
+    font-size: 5.5rem;
+    line-height: 7.5rem;
+}
+
+.home-heading-2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-top: -1.1rem;
+}
+
+.button-cards-container {
+    margin-right: 4rem;
+}
+
+.button-cards {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.button-cards--normal {
+    margin-right: 2.4rem;
+}
+
+.button-cards__rectangle {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    fill: var(--color-gray-1);
+}
+
+.button-cards__rectangle--active {
+    fill: var(--color-gray-7);
 }
