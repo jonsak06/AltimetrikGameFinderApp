@@ -18,6 +18,8 @@
     --color-gray-4: #a6a6a6;
     --color-gray-5: #d8d8d8;
     --color-gray-6: #f1f1f1;
+    --color-gray-7: #515151;
+    --color-gray-8: #939393;
 
     --color-red-1: #ed7474;
     --color-red-2: #e07979;
@@ -560,14 +562,16 @@ body {
     justify-self: flex-end;
 }
 
-.main-container {
+.home-container {
     display: flex;
+    width: 100vw;
 }
 
 /*Sidebar*/
 .sidebar {
     width: 26rem;
     margin-left: 3.8rem;
+    margin-right: 1.2rem;
 }
 
 .sidebar__items {
@@ -614,6 +618,10 @@ body {
     cursor: pointer;
 }
 
+.option:last-child {
+    margin-bottom: 2.2rem;
+}
+
 .option:hover > .option__icon {
     fill: var(--color-primary);
 }
@@ -636,4 +644,202 @@ body {
 .option__text {
     text-decoration: none;
     color: inherit;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.home-heading-section {
+    width: 100%;
+    height: 8.6rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+.home-heading-container {
+    margin-right: auto;
+}
+
+.home-heading {
+    font-weight: 800;
+    font-size: 5.5rem;
+    line-height: 7.5rem;
+}
+
+.home-heading-2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-top: -1.1rem;
+}
+
+.button-cards-container {
+    margin-right: 4rem;
+}
+
+.button-cards {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.button-cards--normal {
+    margin-right: 2.4rem;
+}
+
+.button-cards__rectangle {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    fill: var(--color-gray-1);
+}
+
+.button-cards__rectangle--active {
+    fill: var(--color-gray-7);
+}
+
+/*cards*/
+.cards-container {
+    margin-top: 3rem;
+    margin-right: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.4rem;
+}
+
+.card {
+    width: 36.3rem;
+    height: 31.4rem;
+    background: var(--color-gray-1);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card__image-box {
+    width: 100%;
+    height: 20.5rem;
+}
+
+.card__image {
+    width: 36.3rem;
+    height: 20.5rem;
+}
+
+.card__information {
+    display: flex;
+    padding: 0.98rem 2rem 2rem 2rem;
+}
+
+.card__description-box {
+    margin-right: auto;
+}
+
+.card__heading {
+    font-weight: 800;
+    font-size: 2.3rem;
+    line-height: 3.1rem;
+    margin-bottom: 0.6rem;
+}
+
+.card__description {
+    width: 18.6rem;
+    height: 4.6rem;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    overflow: visible;
+    font-size: 1.2rem;
+    font-family: var(--font-1);
+    font-weight: 300;
+    line-height: 1.6rem;
+    color: var(--color-gray-8);
+}
+.card-description__term {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card-description__definition {
+    margin-left: auto;
+}
+
+.description__line {
+    width: 18.6rem;
+    height: 0.1rem;
+    background: #3d3d3d;
+    border: 0 solid var(--color-gray-8);
+    margin-top: 0.25rem;
+}
+
+.description__line:first-of-type {
+    margin-bottom: 0.65rem;
+}
+
+.card__icons-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.console-icons {
+    width: 6rem;
+    height: 1.3rem;
+    fill: var(--color-white);
+    margin: 1rem 0 0.6rem 0;
+}
+
+.card__number {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 0.6rem;
+}
+
+.card__button {
+    width: 4.7rem;
+    height: 2.4rem;
+    background: linear-gradient(
+        180deg,
+        var(--color-primary) 0%,
+        var(--color-primary-dark) 100%
+    );
+    border-radius: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card__button:hover {
+    background: var(--color-primary);
+}
+
+.card__button:active {
+    background: linear-gradient(
+        180deg,
+        var(--color-primary) 0%,
+        var(--color-primary-dark) 100%
+    );
+}
+
+.button__icon {
+    fill: var(--color-white);
+}
+
+.button__icon--plus-sign {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: .9rem 0.1rem 0.7rem 1rem;
+}
+
+.button__icon--gift-box {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0.3rem 0.4rem 0.4rem 0;
 }
