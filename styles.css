@@ -408,6 +408,7 @@ body {
 @media only screen and (max-width: 1023px) {
     body {
         align-items: flex-start;
+        background: var(--color-gray-1);
     }
     .carousel {
         display: none;
@@ -417,7 +418,7 @@ body {
     }
     .login {
         flex: 100%;
-        height: 100vh;
+        height: inherit;
         box-shadow: none;
         border-radius: 0;
     }
