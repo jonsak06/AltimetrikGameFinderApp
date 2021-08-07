@@ -20,6 +20,7 @@
     --color-gray-6: #f1f1f1;
     --color-gray-7: #515151;
     --color-gray-8: #939393;
+    --color-gray-9: #898989;
 
     --color-red-1: #ed7474;
     --color-red-2: #e07979;
@@ -335,7 +336,7 @@ body {
     line-height: 1.6rem;
     color: var(--color-white);
     text-transform: uppercase;
-    margin-left: 2.8rem; /*falta calcularlo bien*/
+    margin-left: 2.8rem;
 }
 
 .social-logins__icon-box--facebook {
@@ -488,6 +489,16 @@ body {
     margin-right: auto;
 }
 
+.header__search-container:hover > .header__search-bar::placeholder {
+    color: var(--color-gray-9);
+
+}
+
+.header__search-container:hover > .header__search-icon {
+    fill: var(--color-gray-9);
+
+}
+
 .header__search-icon {
     width: 1.6rem;
     height: 1.6rem;
@@ -506,6 +517,7 @@ body {
     margin-top: 3.2rem;
     padding-left: 6.1rem;
     background: var(--color-gray-6);
+    color: var(--color-gray-9);
 }
 
 .header__search-bar::placeholder {
