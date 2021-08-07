@@ -705,9 +705,10 @@ body {
 /*cards*/
 .cards-container {
     margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
     margin-right: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.4rem;
 }
 
 .card {
