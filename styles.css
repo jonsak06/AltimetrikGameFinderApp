@@ -762,30 +762,28 @@ body {
 }
 
 .card__description {
-    width: 18.6rem;
-    height: 4.6rem;
     display: flex;
     flex-direction: column;
-    flex-flow: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    overflow: visible;
+}
+
+.description-item {
+    width: 18.6rem;
     font-size: 1.2rem;
     font-family: var(--font-1);
     font-weight: 300;
     line-height: 1.6rem;
     color: var(--color-gray-8);
-}
-.card-description__term {
-    text-overflow: ellipsis;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row;
+    flex-wrap: wrap;
 }
 
-.card-description__definition {
+.description-item__definition {
     margin-left: auto;
 }
 
-.description__line {
+.description-item__line {
     width: 18.6rem;
     height: 0.1rem;
     background: #3d3d3d;
@@ -793,7 +791,7 @@ body {
     margin-top: 0.25rem;
 }
 
-.description__line:first-of-type {
+.description-item__line:first-of-type {
     margin-bottom: 0.65rem;
 }
 
