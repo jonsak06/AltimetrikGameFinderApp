@@ -453,6 +453,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     height: auto;
+    position: relative;
 }
 
 .header {
@@ -491,12 +492,10 @@ body {
 
 .header__search-container:hover > .header__search-bar::placeholder {
     color: var(--color-gray-9);
-
 }
 
 .header__search-container:hover > .header__search-icon {
     fill: var(--color-gray-9);
-
 }
 
 .header__search-icon {
@@ -847,7 +846,7 @@ body {
 .button__icon--plus-sign {
     width: 0.7rem;
     height: 0.7rem;
-    margin: .9rem 0.1rem 0.7rem 1rem;
+    margin: 0.9rem 0.1rem 0.7rem 1rem;
 }
 
 .button__icon--gift-box {
@@ -857,16 +856,16 @@ body {
 }
 
 /*descomentar al cambiar a la vista de 3 columnas*/
-/* .card__number--one-column {
+.card__number--one-column {
     display: none;
 }
 
 .card__synopsis-container {
     display: none;
-} */
+}
 
 /*cards in one column*/
-.cards-container {
+/* .cards-container {
     grid-template-columns: repeat(1, 1fr);
     align-self: center;
 }
@@ -927,4 +926,79 @@ body {
     font-family: var(--font-1);
     font-size: 1.4rem;
     line-height: 1.9rem;
+} */
+
+/*homepage styles and media queries for tablet and mobile */
+.header__hamburger {
+    fill: var(--color-white);
+    width: 2.8rem;
+    height: 2.4rem;
+    margin-top: 4rem;
+    margin-right: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar__heading {
+    font-family: var(--font-1);
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3.8rem;
+    text-transform: uppercase;
+    letter-spacing: .174rem;
+    margin-bottom: 4.7rem;
+    display: none;
+}
+
+@media only screen and (max-width: 1430px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .sidebar {
+        width: 30.3rem;
+        height: 100vh;
+        position: absolute;
+        background: var(--color-bg-2);
+        top: 0;
+        z-index: 10;
+        margin: 0;
+        padding-top: 3.4rem;
+        padding-left: 4rem;
+        box-shadow: 1.4rem 0 3.6rem .5rem rgba(0, 0, 0, 0.62);
+    }
+
+    .sidebar, 
+    .header__heading,
+    .header__logout-text,
+    .header__logout-icon {
+        display: none;
+    }
+
+    .header__header-options {
+        width: 89.6%;
+    }
+
+    .header__hamburger {
+        display: initial;
+    }
+
+    .header__account-container {
+        width: auto;
+    }
+
+    .header__line {
+        width: 89.6%;
+    }
+
+    .sidebar__heading {
+        display: initial;
+    }
+
+    .main-container {
+        padding-left: 4rem;
+    }
 }
