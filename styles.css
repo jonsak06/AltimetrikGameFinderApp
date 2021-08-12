@@ -597,6 +597,10 @@ body {
     margin-top: 3.3rem;
 }
 
+.item:last-child {
+    margin: 0;
+}
+
 .item {
     margin-bottom: 1.1rem;
 }
@@ -886,6 +890,28 @@ body {
     display: none;
 }
 
+.sidebar__logout-container {
+    width: 10.3rem;
+    align-items: center;
+    margin-top: 29.5rem;
+    display: none;
+}
+
+.sidebar__logout-icon {
+    width: 2rem;
+    height: 1.5rem;
+    fill: var(--color-white);
+    margin-right: 1.1rem;
+    cursor: pointer;
+}
+
+.sidebar__logout-text {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
 @media only screen and (max-width: 1430px) {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
@@ -918,8 +944,13 @@ body {
         width: 89.6%;
     }
 
-    .header__hamburger {
-        display: initial;
+    .header__hamburger,
+    .sidebar__heading {
+        display: inline-block;
+    }
+
+    .sidebar__logout-container {
+        display: flex;
     }
 
     .header__account-container {
@@ -928,10 +959,6 @@ body {
 
     .header__line {
         width: 89.6%;
-    }
-
-    .sidebar__heading {
-        display: initial;
     }
 
     .main-container {
