@@ -859,6 +859,14 @@ body {
     margin: 0.3rem 0.4rem 0.4rem 0;
 }
 
+.footer {
+    width: 100vw;
+    height: 10.8rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%);
+    position: fixed;
+    bottom: 0;
+}
+
 /*descomentar al cambiar a la vista de 3 columnas*/
 .card__number--one-column {
     display: none;
