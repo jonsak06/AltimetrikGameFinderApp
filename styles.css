@@ -869,13 +869,26 @@ body {
 }
 
 /*homepage styles and media queries for tablet and mobile */
-.header__hamburger {
+.hamburger {
     fill: var(--color-white);
     width: 2.8rem;
     height: 2.4rem;
+    cursor: pointer;
+}
+
+.hamburger--header {
     margin-top: 4rem;
     margin-right: auto;
-    cursor: pointer;
+    display: none;
+}
+
+.sidebar__heading-container {
+    width: 26.7rem;
+    height: 3.8rem;
+    margin-bottom: 4.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     display: none;
 }
 
@@ -886,8 +899,6 @@ body {
     line-height: 3.8rem;
     text-transform: uppercase;
     letter-spacing: .174rem;
-    margin-bottom: 4.7rem;
-    display: none;
 }
 
 .sidebar__logout-container {
@@ -936,7 +947,8 @@ body {
     .sidebar, 
     .header__heading,
     .header__logout-text,
-    .header__logout-icon {
+    .header__logout-icon,
+    .hamburger--sidebar {
         display: none;
     }
 
@@ -944,12 +956,12 @@ body {
         width: 89.6%;
     }
 
-    .header__hamburger,
-    .sidebar__heading {
-        display: inline-block;
+    .hamburger--header {
+        display: block;
     }
 
-    .sidebar__logout-container {
+    .sidebar__logout-container,
+    .sidebar__heading-container {
         display: flex;
     }
 
@@ -969,6 +981,69 @@ body {
         width: 33.1rem;
         height: 31.4rem;
     }
+}
+
+/*mobile*/
+.header__search-icon-mobile {
+    width: 2.3rem;
+    height: 2.3rem;
+    fill: var(--color-white);
+    margin: 4rem 4rem 0 0;
+    cursor: pointer;
+    display: none;
+}
+
+.header__search-bar--mobile {
+    width: 76.88%;
+    padding-left: 2.2rem;
+    margin-bottom: 3.2rem;
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        height: 10.4rem;
+        /*al clickear la lupa*/
+        /* height: 16.6rem; */
+    }
+
+    .header__search-container,
+    .header__search-icon,
+    .header__account-container,
+    .header__line {
+        display: none;
+    }
+
+    .hamburger--header {
+        margin-left: 4rem;
+    }
+
+    /*al clickear la lupa*/
+    /* .header__search-bar--mobile, */
+    .hamburger--sidebar,
+    .header__search-icon-mobile {
+        display: block;
+    }
+
+    /*al abrir la sidebar*/
+    /* .sidebar {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        padding-left: 3rem;
+        flex-direction: column;
+        box-shadow: none;
+    } */
+
+    .sidebar__logout-container {
+        margin-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    /*al abrir la sidebar*/
+    /* .main-container {
+        display: none;
+    } */
 }
 
 /*cards in one column*/
