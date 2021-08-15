@@ -1044,6 +1044,38 @@ body {
     /* .main-container {
         display: none;
     } */
+
+    .main-container {
+        padding: 0;
+    }
+
+    .home-heading-section {
+        width: auto;
+        height: auto;
+        margin: 2.4rem 0 3rem 4rem;
+    }
+
+    .home-heading-container {
+        margin: 0;
+    }
+
+    .home-heading {
+        font-size: 4.5rem;
+    }
+
+    .home-heading-2 {
+        margin-top: 0;
+    }
+
+    .button-cards-container {
+        display: none;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100vw;
+        margin: 0;
+    }
 }
 
 /*cards in one column*/
