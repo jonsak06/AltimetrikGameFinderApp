@@ -583,18 +583,14 @@ body {
 /*Sidebar*/
 .sidebar {
     width: 26rem;
-    margin-left: 3.8rem;
-    margin-right: 1.2rem;
+    box-sizing: content-box;
+    padding: 3.3rem 1.2rem 0 3.8rem;
 }
 
 .sidebar__items {
     display: flex;
     flex-direction: column;
     list-style: none;
-}
-
-.item:first-child {
-    margin-top: 3.3rem;
 }
 
 .item:last-child {
