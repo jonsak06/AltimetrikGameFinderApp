@@ -154,8 +154,7 @@ body {
     user-select: none;
 }
 
-.input-box__icon--show-password {
-    width: 2rem;
+.input-box__icon--password {
     height: 1.37rem;
     fill: var(--color-gray-3);
     margin-left: -3.4rem;
