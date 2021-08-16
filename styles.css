@@ -159,6 +159,7 @@ body {
     fill: var(--color-gray-3);
     margin-left: -3.4rem;
     align-self: center;
+    cursor: pointer;
 }
 
 .input__error-message {
