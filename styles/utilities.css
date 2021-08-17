@@ -1,3 +1,23 @@
 .hide {
     display: none;
 }
+
+.vis-hidden {
+    visibility: hidden;
+}
+
+.border-red {
+    border-color: var(--color-red-2);
+}
+
+.text-red {
+    color: var(--color-red-2);
+}
+
+.text-red::placeholder {
+    color: var(--color-red-2);
+}
+
+.icon-red {
+    fill: var(--color-red-2);
+}

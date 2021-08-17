@@ -170,7 +170,6 @@ body {
 }
 
 .input__error-message {
-    visibility: hidden;
     font-size: 1.4rem;
     line-height: 1.9rem;
     color: var(--color-red-2);
