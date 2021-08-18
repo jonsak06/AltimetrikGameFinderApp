@@ -1093,24 +1093,19 @@ body {
     }
 
     /*al abrir la sidebar*/
-    /* .sidebar {
+    .sidebar--mobile {
         width: 100vw;
         height: 100vh;
         display: flex;
         padding-left: 3rem;
         flex-direction: column;
         box-shadow: none;
-    } */
+    }
 
     .sidebar__logout-container {
         margin-top: 4rem;
         padding-bottom: 4rem;
     }
-
-    /*al abrir la sidebar*/
-    /* .main-container {
-        display: none;
-    } */
 
     .main-container {
         padding: 0;
