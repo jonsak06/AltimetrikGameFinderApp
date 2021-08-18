@@ -81,12 +81,46 @@ email.addEventListener('click', removeEmailErrorStyles);
 password.addEventListener('click', removePassErrorStyles);
 
 form.addEventListener('submit', e => {
-    if(!validateEmail(email.value) || email.value.trim() === '') {
-        e.preventDefault();
+    e.preventDefault();
+    if(!validateEmail(email.value)) {
         addEmailErrorStyles();
-    }
-    if(password.value.length < 6) {
-        e.preventDefault();
+    } else if(password.value.length < 6) {
         addPassErrorStyles();
     }
+    else {
+        login();
+    }
 });
+
+// login request
+const snackbarErrorMsg = document.querySelector('.snackbar__text');
+
+const login = async () => {
+    try {
+        const response = await fetch("http://localhost:3000/login", {
+            method: "POST",
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email: `${email.value}`,
+                password: `${password.value}`,
+            }),
+        });
+        const responseJson = await response.json();
+        if (response.status === 200) {
+            document.cookie = "authToken=" + responseJson.accessToken;
+            window.location.href = "home.html";
+        }
+        if (response.status === 400) {
+            addEmailErrorStyles();
+            addPassErrorStyles();
+            snackbarErrorMsg.textContent = "Wrong credentials";
+            snackbarError.classList.remove("hide");
+        }
+    } catch {
+        snackbarErrorMsg.textContent = "An error ocurred, try again";
+        snackbarError.classList.remove("hide");
+    }
+};
