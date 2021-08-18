@@ -1070,8 +1070,6 @@ body {
 @media only screen and (max-width: 767px) {
     .header {
         height: 10.4rem;
-        /*al clickear la lupa*/
-        /* height: 16.6rem; */
     }
 
     .header__search-container,
@@ -1085,14 +1083,11 @@ body {
         margin-left: 4rem;
     }
 
-    /*al clickear la lupa*/
-    /* .header__search-bar--mobile, */
     .hamburger--sidebar,
     .header__search-icon-mobile {
         display: block;
     }
 
-    /*al abrir la sidebar*/
     .sidebar--mobile {
         width: 100vw;
         height: 100vh;

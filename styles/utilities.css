@@ -33,3 +33,7 @@
 .icon-red {
     fill: var(--color-red-2) !important;
 }
+
+.header-height {
+    height: 16.6rem !important;
+}

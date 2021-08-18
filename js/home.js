@@ -32,3 +32,13 @@ if (tabletQuery.matches) {
         }
     });
 }
+
+//Toggle search bar on mobile
+const searchIcon = document.querySelector(".header__search-icon-mobile");
+const searchBarMobile = document.querySelector(".header__search-bar--mobile");
+const header = document.querySelector(".header");
+
+searchIcon.addEventListener("click", () => {
+    searchBarMobile.classList.toggle("display-block");
+    header.classList.toggle("header-height");
+});
