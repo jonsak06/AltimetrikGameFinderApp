@@ -1,23 +1,43 @@
 .hide {
-    display: none;
+    display: none !important;
+}
+
+.display-flex {
+    display: flex !important;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.pos-fixed {
+    position: fixed !important;
 }
 
 .vis-hidden {
-    visibility: hidden;
+    visibility: hidden !important;
 }
 
 .border-red {
-    border-color: var(--color-red-2);
+    border-color: var(--color-red-2) !important;
 }
 
 .text-red {
-    color: var(--color-red-2);
+    color: var(--color-red-2) !important;
 }
 
 .text-red::placeholder {
-    color: var(--color-red-2);
+    color: var(--color-red-2) !important;
 }
 
 .icon-red {
-    fill: var(--color-red-2);
+    fill: var(--color-red-2) !important;
+}
+
+.header-height {
+    height: 16.6rem !important;
+}
+
+.button-cards-active {
+    fill: var(--color-gray-7) !important;
 }
