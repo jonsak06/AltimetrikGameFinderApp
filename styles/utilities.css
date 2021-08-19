@@ -37,3 +37,7 @@
 .header-height {
     height: 16.6rem !important;
 }
+
+.button-cards-active {
+    fill: var(--color-gray-7) !important;
+}

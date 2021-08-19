@@ -42,3 +42,66 @@ searchIcon.addEventListener("click", () => {
     searchBarMobile.classList.toggle("display-block");
     header.classList.toggle("header-height");
 });
+
+// cards layout buttons
+const cardsLayoutBtns = document.querySelectorAll(".button-cards__rectangle");
+const btnNormalRectangle = cardsLayoutBtns[0];
+const btnOneColRectangle = cardsLayoutBtns[1];
+
+const cardsContainer = document.querySelector(".cards-container");
+const cardsNumberOneCol = document.querySelectorAll(".card__number-one-column");
+const cardsNumber = document.querySelectorAll(".card__number--normal-layout");
+const cardsSynContainer = document.querySelectorAll(
+    ".card__synopsis-container"
+);
+
+const cardElemsCollections = [
+    document.querySelectorAll(".card"),
+    document.querySelectorAll(".card__image-container"),
+    document.querySelectorAll(".card__image"),
+    document.querySelectorAll(".card__information"),
+    document.querySelectorAll(".card__heading"),
+    document.querySelectorAll(".card__description"),
+    document.querySelectorAll(".description-item"),
+    document.querySelectorAll(".card__button"),
+];
+
+btnOneColRectangle.parentElement.addEventListener("click", () => {
+    cardsContainer.classList.add("cards-container--one-column");
+    cardsNumberOneCol.forEach((num) => {
+        num.classList.add("display-block");
+    });
+    cardsNumber.forEach((num) => {
+        num.classList.add("hide");
+    });
+    cardsSynContainer.forEach((syn) => {
+        syn.classList.add("display-block");
+    });
+    cardElemsCollections.forEach((col) => {
+        col.forEach((el) => {
+            el.classList.add(el.className.split(" ")[0] + "--one-column");
+        });
+    });
+    btnOneColRectangle.classList.add("button-cards-active");
+    btnNormalRectangle.classList.remove("button-cards-active");
+});
+
+btnNormalRectangle.parentElement.addEventListener("click", () => {
+    cardsContainer.classList.remove("cards-container--one-column");
+    cardsNumberOneCol.forEach((num) => {
+        num.classList.remove("display-block");
+    });
+    cardsNumber.forEach((num) => {
+        num.classList.remove("hide");
+    });
+    cardsSynContainer.forEach((syn) => {
+        syn.classList.remove("display-block");
+    });
+    cardElemsCollections.forEach((col) => {
+        col.forEach((el) => {
+            el.classList.remove(el.className.split(" ")[0] + "--one-column");
+        });
+    });
+    btnOneColRectangle.classList.remove("button-cards-active");
+    btnNormalRectangle.classList.add("button-cards-active");
+});
