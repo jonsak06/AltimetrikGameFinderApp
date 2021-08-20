@@ -817,6 +817,8 @@ body {
     font-size: 2.3rem;
     line-height: 3.1rem;
     margin-bottom: 0.6rem;
+    height: 3.1rem;
+    overflow: hidden;
 }
 
 .card__description {
@@ -859,10 +861,12 @@ body {
     align-items: flex-end;
 }
 
-.console-icons {
+.platform-icons {
     width: 6rem;
     height: 1.3rem;
-    fill: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 1rem 0 0.6rem 0;
 }
 
@@ -1167,7 +1171,7 @@ body {
         margin-top: 1.4rem;
     }
 
-    .console-icons,
+    .platform-icons,
     .card__number {
         margin: 0;
     }
