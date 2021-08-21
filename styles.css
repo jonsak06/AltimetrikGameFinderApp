@@ -866,8 +866,12 @@ body {
     height: 1.3rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 1rem 0 0.6rem 0;
+}
+
+.platform-icons__icon:not(:first-child) {
+    margin-left: 0.8rem;
 }
 
 .card__number {
