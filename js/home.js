@@ -267,12 +267,12 @@ const loadCards = (games) => {
     setCardsLayoutButtons();
 };
 
-document.addEventListener("DOMContentLoaded", async () => {
-    let games;
-    try {
-        games = (await requestGames()).results;
-    } catch {
-        console.log("error");
-    }
-    loadCards(games);
-});
+// document.addEventListener("DOMContentLoaded", async () => {
+//     let games;
+//     try {
+//         games = (await requestGames()).results;
+//     } catch {
+//         console.log("error");
+//     }
+//     loadCards(games);
+// });
